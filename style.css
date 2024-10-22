@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #0c1446, #0d1b64);
+    /* background-color: rgba(224, 218, 218, 0.527); */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* width: 100px; */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color:white;
+    font-weight: bold;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .login-btn, .signup-btn {
+    border: 2px solid white;
+    background: transparent;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: white;
+    color: #0c1446;
+    /* border-color: blue; */
+  }
+  
+  .signup-btn:hover {
+    background-color: white;
+    color: black;
+  
+    /* border-color: blue; */
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10px);
+  }
+  
+  .hamburger-active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10px);
+  }
+  
+  /* Mobile Nav */
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    background-color: #0c1446c6;
+    z-index: 99;
+    position: sticky;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mobile-nav ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .mobile-nav li {
+    margin: 20px 10px;
+  }
+  
+  .mobile-nav a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links,
+    .auth-buttons {
+        display: none;
+    }
+  
+    .hamburger {
+        display: flex;
+    }
+  
+    .mobile-nav-active {
+        display: block;
+    }
+    .navbar{
+        max-width: 100%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .cont1{
+        max-width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px){
+    /* footer{
+      margin-top: 40px;
+    } */
+  }
+
+  @media (max-width: 430px) {
+    .fin{
+        font-size: 10px;
+    }
+    /* .sub1-cont4 img{
+        width: 10px;
+    } */
+    .sub2-cont4{
+      margin-top: -200px;
+    }
+    .cont6 .package{
+      font-size: 30px;
+      margin-top: 50px;
+    }
+    .choose{
+      margin-top: 30px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .whatisrichie{
+      margin-top: 30px;
+    }
+    .capital{
+      /* margin-top: 20px; */
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    .cont5{
+      margin-top: 300px;
+      max-height: 200vh;
+      padding-bottom: 500px;
+    }
+    .pre-cont5-one p{
+     font-size: 12px;
+     font-weight: bold;
+     /* margin-left: 60px; */
+     /* position: absolute; */
+
+    }
+    .cont2{
+      padding-bottom: 550px
+    }
+
+    
+    /* footer{
+      position: relative;
+      margin-top: 620px;
+      font-size: 10px;
+    } */
+  } 
+    
+  @media (max-width: 390px){
+    /* footer{
+      margin-top: 690px;
+      font-size: 10px;
+    } */
+    .cont6 .package{
+      margin-top: 250px;
+    }
+    .cont5{
+      padding-bottom: 600px;
+    }
+
+    .cont6 .package{
+      font-size: 30px;
+    }
+    .choose{
+      margin-top: 50px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 414px){
+    .cont6 .package{
+      margin-top: 280px;
+    }
+    .cont5{
+      padding-bottom: 550px;
+    }
+  }
+
+  @media (max-width: 375px){
+    .cont4 .sub1-cont4 img{
+      /* height: 300px; */
+      width: 300px;
+    }
+    .cont1 .fin{
+      font-size: 30px;
+    }
+    .cont3 .about{
+      font-size: 30px;
+    }
+    .cont3 .commercial{
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .sub2-cont4 .whatisrichie{
+      margin-top: 100px;
+    }
+    .capital{
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .cont5{
+      padding-bottom: 800px;
+    }
+    .cont6 .package{
+      margin-top: 450px;
+
+    }
+    .cont6 .choose{
+      font-size: 10px;
+    }
+    /* footer{
+      margin-top: 800px;
+      font-size: 10px;
+    } */
+  }
+  
+
+  .cont1 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+    
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cont1 button{
+    border: 2px solid rgb(39, 173, 235);
+    background-color: rgba(0, 0, 0, 0.377);
+    color: #e2d10f;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 30px;
+    margin-top: -5px;
+    
+}
+.cont1 button:hover{
+    cursor: pointer;
+    background-color: rgb(39, 173, 235);
+    border: 1px solid rgb(226, 209, 15);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute; /* Absolute positioning for buttons */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+}
+
+.navigation button {
+    display: flex;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    
+}
+
+.navigation button:hover{
+    /* background-color: rgba(160, 212, 144, 1.00); */
+    /* background-color: chartreuse; */
+    /* border: chartreuse; */
+    background: none;
+    color: black;
+    border: none;
+    transition: 0.9ms;
+}
+
+/* Position buttons */
+#prevBtn {
+    position: absolute;
+    left: 20px; 
+}
+
+#nextBtn {
+    position: absolute;
+    right: 20px; 
+}
+
+
+.fin{
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+    /* padding-left: 90px; */
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Poppins", system-ui;
+    line-height: 1.4;
+}
+
+
+
+.fin, .fin1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.fin.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s; /* Delay for the first text */
+}
+
+.fin1.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.5s; /* Delay for the second text */
+}
+
+.cont2{
+  background-color: rgb(224, 218, 218);
+  height: 30vh;
+}
+
+.cont2-one{
+  /* margin-left: 20px; */
+  height: 100vh;
+  /* width: 100vw; */
+  /* background-color: aqua; */
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.pre-cont2-one{
+  padding: 34px;
+  /* background-color: pink;
+  border: 1px solid black; */
+  text-align: center;
+}
+.pre-cont2-one img{
+  height: 50px;
+}
+
+.cont3{
+    background-color: white;
+    height: 80vh;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+.sub-cont3{
+    /* background-color: blue; */
+    height: 15vh;
+    
+}
+.sub-cont3 p{
+    text-align: center;
+    text-transform: uppercase;
+}
+.about{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about span{
+    color: rgb(139, 128, 0);
+}
+.cont4{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.sub1-cont4{
+    /* background-color: red; */
+    /* margin-top: 20px; */
+    margin-left: 30px;
+    height: 60vh;
+    width: 30vw;
+}
+.sub1-cont4 img{
+    width: 360px;
+}
+.sub2-cont4{
+    /* background-color: pink; */
+    height: 35vh;
+    /* width: 60vw; */
+    /* margin-top: 20px; */
+}
+.whatisrichie{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sub2-cont4 button{
+    border: rgb(39, 173, 235);
+    margin-top: 20px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    background-color: rgb(139, 128, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 30px;
+    box-shadow: none;
+}
+.sub2-cont4 button:hover{
+    background-color: rgb(39, 173, 235);
+    cursor: pointer;
+}
+
+.cont5{
+  background-color: rgb(224, 218, 218);
+  height: 100vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.cont5-one{
+  /* margin-left: 20px; */
+  height: 100vh;
+  /* width: 100vw; */
+  /* background-color: aqua; */
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.pre-cont5-one{
+  padding: 34px;
+  /* background-color: pink;
+  border: 1px solid black; */
+  text-align: center;
+}
+.pre-cont5-one img{
+  height: 50px;
+}
+
+.cont6{
+    background-color: white;
+    height: 70vh;
+}
+.cont6 p{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.package{
+    font-size: 50px;
+    font-weight: bold;
+}
+.package span{
+    color: rgb(139, 128, 0);
+}
+.pre-sub-cont6{
+    margin-top: 50px;
+    text-align: center;
+    height: 40vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.pre-sub-cont6 p{
+    font-size: 70px;
+}
+
+.pre-sub-cont6 button{
+    border: rgb(39, 173, 235);
+    background-color: rgb(139, 128, 0);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 30px;
+    margin-top: 30px;
+    border-bottom-right-radius: 10px;
+}
+.pre-sub-cont6 button:hover{
+    background-color: rgb(39, 173, 235);
+    cursor: pointer;
+}
+.can{
+    background-color: rgb(224, 218, 218);
+    padding: 34px;
+}
+/* footer {
+    padding: 1rem;
+    background-color: #333;
+    border-top: 1px solid rgb(139, 128, 0);
+    color: #fff;
+    text-align: center;
+  } */
