@@ -8,6 +8,66 @@ html{
     scroll-behavior: smooth;
 }
 
+.pip{
+  display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            background-color: #f5f5f5;
+}
+
+.contner {
+  max-width: 800px;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a0dad;
+  flex: 1 1 100%;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  flex: 1 1 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  flex: 1 1 calc(20% - 20px);
+}
+
+.info span {
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .info {
+      flex: 1 1 calc(50% - 20px);
+  }
+
+  .title, .subtitle {
+      text-align: center;
+  }
+}
+
 .navbar {
     background: linear-gradient(90deg, #0c1446, #0d1b64);
     /* background-color: rgba(224, 218, 218, 0.527); */
@@ -234,7 +294,9 @@ html{
       margin-top: 250px;
     }
     .cont5{
-      padding-bottom: 600px;
+      /* padding-bottom: 900px; */
+      /* height: 120vh; */
+      padding-bottom: 800px;
     }
 
     .cont6 .package{
