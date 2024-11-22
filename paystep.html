@@ -3,10 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maview l Payment Step</title>
+    <title>Payment Step</title>
+    <link rel="stylesheet" href="image/g-removebg-preview.png">
     <link rel="stylesheet" href="paystep.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar -->
+          <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+            <div class="sidebar-sticky">
+              <h4 class="text-light p-3">Maview <span style="color: #ffc107;">Capital</span></h4>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="invest.html">Invest</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Investments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Withdraw</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">My Withdrawals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="verify.html">Verify ID</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="index.html">Home</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+              <h1 class="h2">Payment Steps</h1>
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group me-2">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Welcome, George Drill</button>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+                <!-- Header Section -->
+                <header class="header">
+                    <div class="logo">
+                        <img src="logo-placeholder.png" alt="Logo">
+                    </div>
+                    <h1>Payment Steps</h1>
+                </header>
+        
+                <!-- Payment Steps Section -->
+                <div class="steps">
+                    <ol>
+                        <li>vdhdhvvuufvdbvayhvdfvhfbvbefvfvdflhvdefhy</li>
+                        <li>dfdhdchdcdvdvddddcvdbdvdcvdvdcvdvcdc</li>
+                        <li>rhfhuvyvfavvhvfvvbvvdvdvdivfev,k</li>
+                        <li>ddbjbdjdfbbdbvbbhgghfghfhfvh</li>
+                    </ol>
+                </div>
+        
+                <!-- Ethereum Payment -->
+                <div class="payment-method">
+                    <h2>Ethereum Address</h2>
+                    <input type="text" value="345ffbbg5675757866nnyy787tyty7676867y74hy43" id="eth-address" readonly>
+                    <div class="buttons">
+                        <button onclick="copyToClipboard('eth-address')">Copy Address</button>
+                        <button onclick="scanQR()">Scan QR</button>
+                    </div>
+                </div>
+        
+                <!-- Bitcoin Payment -->
+                <div class="payment-method">
+                    <h2>Bitcoin Address</h2>
+                    <input type="text" value="345ffbbg5675757866nnyy787tyty7676867y74hy43" id="btc-address" readonly>
+                    <div class="buttons">
+                        <button onclick="copyToClipboard('btc-address')">Copy Address</button>
+                        <button onclick="scanQR()">Scan QR</button>
+                    </div>
+                </div>
+            </div>
+        
+          </main>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          <script>
+            // Function to copy address to clipboard
+function copyToClipboard(inputId) {
+    const copyText = document.getElementById(inputId);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value).then(() => {
+        alert("Address copied to clipboard!");
+    });
+}
+
+// Placeholder function for Scan QR
+function scanQR() {
+    alert("QR code scanning functionality will be implemented here.");
+}
+          </script>    
 </body>
 </html>
